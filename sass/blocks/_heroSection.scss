@@ -1,0 +1,148 @@
+.hero-section{
+    
+    box-sizing: border-box;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url(../../images/hero-bgi1.png), url(../../images/hero-bgi2.png);
+    background-position: left 16%, right 80%;
+    padding-bottom: 77px;
+    @media only screen and(max-width:576px) {
+        padding-bottom: 30px;
+    }
+
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12% 0 10% 0;
+        @media only screen and(max-width:768px) {
+            flex-direction: column;
+            padding: 14% 0 0 0;
+        }
+
+        &-left{
+            @media only screen and(max-width:768px) {
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 55px;
+            }
+            @media only screen and(max-width:576px) {
+                margin-bottom: 36px;
+            }
+            &__title{
+                font-family: 'Nexa';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 36px;
+                color: #2F333D;
+                margin-bottom: 13px;
+                @media only screen and(max-width:768px) {
+                    font-size: 34px;
+                    line-height: 34px;
+                    text-align: center;
+                }
+                @media only screen and(max-width:576px) {
+                    font-size: 24px;
+                    line-height: 24px;
+                }
+            }
+
+            &__text{
+                font-family: 'Nexa Light';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 20px;
+                color: #2F333D;
+                max-width: 382px;
+                margin-bottom: 21px;
+                @media only screen and(max-width:768px) {
+                    margin-bottom: 25px;
+                }
+                @media only screen and(max-width:576px) {
+                    font-size: 12px;
+                    line-height: 16px;
+                    max-width: 328px;
+                }
+            }
+
+            &__btn {
+                background: #EA5157;
+                box-shadow: 0px 0px 20px #FF8287;
+                border-radius: 8px;
+                padding: 5px 21px;
+                border: none;
+                outline: none;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 20px;
+                color: #FFFFFF;
+                cursor: grab;
+                transition: all ease 0.5s;
+                border: 1px solid transparent;
+
+                @media only screen and(max-width:576px) {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                &:hover{
+                    background-color: #fff;
+                    color: #EA5157;
+                    border: 1px solid #EA5157;
+                }
+
+                &:active{
+                    opacity: 0.6;
+                    cursor: grabbing;
+                    box-shadow: 0;
+                }
+            }
+        }
+
+        &-right{
+            &__img{
+                width: 447.46px;
+                height: 338.01px;
+                object-fit: contain;
+
+                @media only screen and(max-width:576px) {
+                    width: 200px;
+                    height: 180px;
+                }
+            }
+        }
+    }
+
+    &-bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &:hover{
+            .hero-section-bottom__img{
+                transform: translateY(10px);
+            }
+        }
+
+        &__title{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            color: #2F333D;
+            margin-bottom: 6px;
+            cursor: pointer;
+        }
+
+        &__img{
+            width: 23.07px;
+            height: 23.07px;
+            transition: all ease 0.5s;
+            cursor: pointer;
+        }
+    }
+}

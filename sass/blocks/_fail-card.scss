@@ -1,0 +1,63 @@
+.fail-card{
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+
+    &.fail{
+        background: #FFFFFF;
+        box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.4), 10px 10px 20px rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+        width: 298.37px;
+        margin: auto;
+        height: 143.11px;
+        padding: 13px 0 15px 0;
+        z-index: 10;
+        box-sizing: border-box;
+    }
+
+    &__title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 26px;
+        color: #2F333D;
+        margin-bottom: 6px;
+        text-align: center;
+    }
+
+    &__text{
+        font-family: 'Nexa Light';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #000000;
+        max-width: 197px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    &__btn{
+        padding: 4px 20px;
+        border: none;
+        outline: none;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+        margin: 0 auto;
+        text-align: center;
+        display: block !important;
+        cursor: pointer;
+        background: #EA5157;
+        border-radius: 4px;
+    }
+
+}

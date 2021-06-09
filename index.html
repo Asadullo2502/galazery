@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galazery</title>
+    <link rel="shortcut icon" href="./images/icons/favicon.jpg">
+    <link rel="stylesheet" href="./fonts/nexa-trans/stylesheet.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./libs/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <div class="apply">
+        <div class="apply-close">
+            <img src="./images/icons/close-btn.svg" alt="close-btn" class="apply-close__img">
+        </div>
+        <h2 class="apply__title">
+            Buyurtmangiz haqida <br>
+            bizga yozing:
+        </h2>
+
+        <form method="POST" class="apply-form">
+            <label for="service-type" class="apply-form__label">Buyurtma turi <span>*</span></label>
+            <select id="service-type" class="apply-form-service-type-select" required>
+                <option class="apply-form-service-type-select__option" value="veb-sayt">Veb Sayt</option>
+                <option class="apply-form-service-type-select__option" value="Dizayn">Dizayn</option>
+                <option class="apply-form-service-type-select__option" value="tg-bot">Telegram Bot</option>
+            </select>
+
+            <label for="abt-order" class="apply-form__label">Buyurtma haqida qisqacha <span>*</span></label>
+            <textarea id="abt-order" cols="30" rows="10" value='' required
+                placeholder="Buyurtma haqida qisqacha ma’lumot kiriting" class="apply-form__textarea"></textarea>
+
+            <label for="" class="apply-form__label">Telefon raqamingiz <span>*</span></label>
+            <input required type="phone" value="+998" placeholder="+998 ......." class="apply-form__phone-input">
+
+            <button class="apply-form__btn" type="submit">Yuborish</button>
+
+        </form>
+
+    </div>
+
+    <div class="success-card">
+        <h3 class="success-card__title">Buyurtma yuborildi!</h3>
+        <p class="success-card__text">Buyurtmani ko’rib chiqib 24 soat ichida siz bilan bog‘lanamiz</p>
+        <button class="success-card__btn">OK</button>
+    </div>
+
+    <div class="fail-card">
+        <h3 class="fail-card__title">Buyurtma yuborishda xatolik!</h3>
+        <p class="fail-card__text">Xurmatli mijoz formalarni barchasi
+            to’ldirilinishi shart. Xatolikni to’g’irlab qayta urunib ko’ring</p>
+        <button class="fail-card__btn">OK</button>
+    </div>
+
+    <header class="header">
+        <div class="header-inner container">
+            <a href="#" class="header-inner-left">
+                <img src="./images/Logo.svg" alt="logo" class="header-inner-left__img">
+                <h3 class="header-inner-left__title">Galazery.<span>uz</span></h3>
+            </a>
+            <ul class="header-inner-right">
+
+                <li class="header-inner-right-list">
+                    <a href="#about-section" class="header-inner-right-list__link">
+                        Biz haqimizda
+                    </a>
+                </li>
+
+                <li class="header-inner-right-list">
+                    <a href="#our-projects" class="header-inner-right-list__link">
+                        Bizning loyihalar
+                    </a>
+                </li>
+
+                <li class="header-inner-right-list">
+                    <a href="#our-servisec" class="header-inner-right-list__link">
+                        Xizmatlar
+                    </a>
+                </li>
+
+                <li class="header-inner-right-list">
+                    <a href="#social" class="header-inner-right-list__link link--pad">
+                        Aloqa
+                    </a>
+                </li>
+
+                <li class="header-inner-right-list">
+                    <a href="#" class="header-inner-right-list__link link--header booking-btns">
+                        Buyurtma berish
+                    </a>
+                </li>
+
+            </ul>
+            <div class="burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-section-inner container">
+
+            <div class="hero-section-inner-left" data-aos="fade-right" data-aos-delay="70">
+                <h2 class="hero-section-inner-left__title">
+                    Saytimizga xush kelbisiz!
+                </h2>
+
+                <p class="hero-section-inner-left__text">
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.Aenean et laoreet urna.
+                    Vivamus mollis metus ornare,imperdiet massa non,
+                    aliquam libero. Integer eu accumsanneque. Donec vel laoreet urna.
+                    Sed in venenatis quam, neccondimentum neque.
+                </p>
+
+                <a type="button" class="hero-section-inner-left__btn" href="#about-section">
+                    batafsil >
+                </a>
+            </div>
+
+            <div class="hero-section-inner-right">
+                <img src="./images/hero-img.png" alt="hero section img" class="hero-section-inner-right__img">
+            </div>
+        </div>
+
+        <div class="hero-section-bottom">
+            <h3 class="hero-section-bottom__title">Ko‘proq ma’lumot</h3>
+            <img src="./images/icons/bottom-arrow.svg" alt="bottom-arrow" class="hero-section-bottom__img">
+        </div>
+
+    </section>
+
+    <section class="about-section" id="about-section">
+        <div class="about-section-inner container">
+            <div class="about-section-inner-left">
+                <img src="./images/about-img.jpg" alt="about-img" class="about-section-inner-left__img">
+            </div>
+
+            <div class="about-section-inner-right">
+                <h3 class="about-section-inner-right__title">
+                    Biz haqimizda*
+                </h3>
+
+                <h4 class="about-section-inner-right__subtitle">
+                    <span>Galazery</span>- bu yosh <br> dasturchilar jamoasi.
+                </h4>
+
+                <p class="about-section-inner-right__text">
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.Aenean et laoreet urna.
+                    Vivamus mollis metus ornare,imperdiet massa non,
+                    aliquam libero. Integer eu accumsanneque. Donec vel
+                    laoreet urna. Sed in venenatis quam, neccondimentum neque.
+                    Lorem ipsum dolor sit amet, consecteturadipiscing elit.
+                </p>
+
+                <h4 class="about-section-inner-right__subtitle subtitle--bottom">
+                    Biz foydalanadigan <span>texnologiyalar</span>:
+                </h4>
+
+                <div class="about-section-inner-right-bottom">
+                    <img src="./images/icons/html.svg" alt="html" class="about-section-inner-right-bottom__img">
+                    <img src="./images/icons/css-3.svg" alt="css" class="about-section-inner-right-bottom__img">
+                    <img src="./images/icons/js.svg" alt="js" class="about-section-inner-right-bottom__img img--js">
+                    <img src="./images/icons/react.svg" alt="react"
+                        class="about-section-inner-right-bottom__img img--react">
+                    <img src="./images/icons/node.svg" alt="node"
+                        class="about-section-inner-right-bottom__img img--node">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="our-projects">
+        <div class="projects-inner container">
+
+            <h2 class="projects-inner__title">
+                Bizning loyihalar*
+            </h2>
+
+            <div class="owl-carousel">
+                <div class="item">
+                    <a href="#" class="center-card">
+                        <div class="center-card-top">
+                            <img src="./images/project-img.jpg" alt="project-img" class="center-card-top__img">
+                            <h2 class="center-card-top__title">Saf Bilim</h2>
+                        </div>
+                        <button class="center-card__btn">
+                            Ko‘rish
+                        </button>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#" class="center-card">
+                        <div class="center-card-top">
+                            <img src="./images/project-img2.jpg" alt="project-img" class="center-card-top__img">
+                            <h2 class="center-card-top__title">“Dashboard” sayti</h2>
+                        </div>
+                        <button class="center-card__btn">
+                            Ko‘rish
+                        </button>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#" class="center-card">
+                        <div class="center-card-top">
+                            <img src="./images/project-img3.jpg" alt="project-img" class="center-card-top__img">
+                            <h2 class="center-card-top__title">You Tube</h2>
+                        </div>
+                        <button class="center-card__btn">
+                            Ko‘rish
+                        </button>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#" class="center-card">
+                        <div class="center-card-top">
+                            <img src="./images/project-img.jpg" alt="project-img" class="center-card-top__img">
+                            <h2 class="center-card-top__title">Saf Bilim</h2>
+                        </div>
+                        <button class="center-card__btn">
+                            Ko‘rish
+                        </button>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#" class="center-card">
+                        <div class="center-card-top">
+                            <img src="./images/project-img2.jpg" alt="project-img" class="center-card-top__img">
+                            <h2 class="center-card-top__title">“Dashboard” sayti</h2>
+                        </div>
+                        <button class="center-card__btn">
+                            Ko‘rish
+                        </button>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#" class="center-card">
+                        <div class="center-card-top">
+                            <img src="./images/project-img3.jpg" alt="project-img" class="center-card-top__img">
+                            <h2 class="center-card-top__title">You Tube</h2>
+                        </div>
+                        <button class="center-card__btn">
+                            Ko‘rish
+                        </button>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#" class="center-card">
+                        <div class="center-card-top">
+                            <img src="./images/project-img.jpg" alt="project-img" class="center-card-top__img">
+                            <h2 class="center-card-top__title">Saf Bilim</h2>
+                        </div>
+                        <button class="center-card__btn">
+                            Ko‘rish
+                        </button>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#" class="center-card">
+                        <div class="center-card-top">
+                            <img src="./images/project-img2.jpg" alt="project-img" class="center-card-top__img">
+                            <h2 class="center-card-top__title">“Dashboard” sayti</h2>
+                        </div>
+                        <button class="center-card__btn">
+                            Ko‘rish
+                        </button>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#" class="center-card">
+                        <div class="center-card-top">
+                            <img src="./images/project-img3.jpg" alt="project-img" class="center-card-top__img">
+                            <h2 class="center-card-top__title">You Tube</h2>
+                        </div>
+                        <button class="center-card__btn">
+                            Ko‘rish
+                        </button>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#" class="center-card">
+                        <div class="center-card-top">
+                            <img src="./images/project-img.jpg" alt="project-img" class="center-card-top__img">
+                            <h2 class="center-card-top__title">Saf Bilim</h2>
+                        </div>
+                        <button class="center-card__btn">
+                            Ko‘rish
+                        </button>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#" class="center-card">
+                        <div class="center-card-top">
+                            <img src="./images/project-img2.jpg" alt="project-img" class="center-card-top__img">
+                            <h2 class="center-card-top__title">“Dashboard” sayti</h2>
+                        </div>
+                        <button class="center-card__btn">
+                            Ko‘rish
+                        </button>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#" class="center-card">
+                        <div class="center-card-top">
+                            <img src="./images/project-img3.jpg" alt="project-img" class="center-card-top__img">
+                            <h2 class="center-card-top__title">You Tube</h2>
+                        </div>
+                        <button class="center-card__btn">
+                            Ko‘rish
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="services" id="our-servisec">
+        <img src="./images/service-img.png" alt="" class="services__img" data-aos="fade-down">
+        <div class="services-inner container">
+            <div class="services-inner-left" data-aos="fade-down">
+                <!-- <img src="./images/service-ball-top.png" alt="service-ball" class="services-inner-left__img"> -->
+                <!-- <img src="./images/service-ball.png" alt="service-ball" class="services-inner-left__img"> -->
+                <!-- <img src="./images/service-ball-back.png" alt="service-ball" class="services-inner-left__img"> -->
+            </div>
+            <div class="services-inner-right" data-aos="fade-up">
+                <h2 class="services-inner-right__title">
+                    Bizning xizmatlar*
+                </h2>
+
+                <h4 class="services-inner-right__text first-text">
+                    <span>Veb dasturlash</span> - biz veb dasturlash
+                    orqali sizga veb dasturlar,biznesingizni tanitish
+                    uchun tashrif saytlari, qilgan loyihalaringizniommaga
+                    ko‘rsatish uchun portfolio saytlari, shuningdek servisko‘rsatish
+                    va mijozlar bilan ishlashingiz uchun Telegram bot’lar tuzamiz!
+                </h4>
+
+                <h4 class="services-inner-right__text">
+                    <span>Grafik dizayn</span> - biz grafik dizayn
+                    orqali sizning kompaniyangiz uchunlogotip, ijtimoiy
+                    tarmoqlarda reklamalaringizni ommagataqdim etishingiz uchun
+                    esa SMM dizaynlar tayyorlaymiz.
+                </h4>
+
+                <h4 class="services-inner-right__text">
+                    P/S: Xizmatlarimizdan ko‘nglingiz to’ladi <span>“Shep”</span> :)
+                </h4>
+
+                <button class="services-inner-right__btn booking-btns" type="button">
+                    Buyurtma bering!
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="social" id="social">
+        <div class="social-inner container">
+            <h2 class="social-inner__title">
+                Jamoamiz tomonidan taqim etiladigan eng sara kontentlarni ijtimoiy
+                tarmoq sahifalarimiz orqali kuzatib boring!
+            </h2>
+
+            <div class="social-inner-top" data-aos="fade-up">
+                <div class="social-inner-top-card">
+                    <svg class="social-inner-top-card__img" width="110" height="108" viewBox="0 0 110 108"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <path
+                                d="M26.0787 46.2586C26.0574 46.2164 26.0361 46.1953 26.0148 46.1531C25.4187 45.1195 24.0775 44.8242 23.077 45.4781C23.0557 45.4781 23.0557 45.4992 23.0344 45.4992C22.0977 46.1109 21.8422 47.3555 22.4383 48.2836C22.4596 48.3047 22.4809 48.3469 22.5021 48.389C23.1195 49.3594 24.4182 49.6547 25.3975 49.0219C25.4187 49.0219 25.4187 49.0008 25.44 49.0008C26.3342 48.4101 26.6322 47.2078 26.0787 46.2586Z" />
+                            <path
+                                d="M62.0147 98.7187C61.2908 98.0016 60.1625 97.8961 59.3109 98.4867C55.5428 101.06 51.2637 102.748 46.6865 103.423C45.175 103.634 43.6422 103.76 42.1307 103.76C34.0408 103.76 26.4193 100.659 20.6926 95.0273C14.9871 89.3953 11.8363 81.907 11.8151 73.9547C11.8151 66.825 14.4762 59.8219 19.1811 54.4429C19.8836 53.6414 19.8836 52.4601 19.1598 51.6797L19.1385 51.6586C18.2869 50.7304 16.7967 50.7304 15.9664 51.6797C10.5803 57.839 7.53595 65.8336 7.55724 73.9758C7.55724 83.0672 11.1551 91.6101 17.6908 98.0437C24.2266 104.477 32.8912 108.021 42.1307 108.021C43.8551 108.021 45.6221 107.895 47.3252 107.641C52.5623 106.861 57.4801 104.941 61.7805 101.988C62.8662 101.25 62.9727 99.7312 62.0572 98.8031C62.0359 98.7398 62.0359 98.7187 62.0147 98.7187Z" />
+                            <path
+                                d="M65.719 92.6438C65.6551 92.7071 65.6125 92.7703 65.5487 92.8547C64.8035 93.7406 64.9526 95.0695 65.868 95.7867C65.8893 95.8078 65.9106 95.8289 65.9319 95.8289C66.826 96.5461 68.1246 96.3774 68.8485 95.5125C68.9123 95.4492 68.9549 95.3859 69.0188 95.3016C69.7639 94.3735 69.5936 93.0235 68.6356 92.3274C68.6356 92.3274 68.6143 92.3063 68.593 92.3063C67.6988 91.6313 66.4215 91.7789 65.719 92.6438Z" />
+                            <path
+                                d="M102.975 36.7453L102.954 28.5398C102.932 26.2828 100.846 26.2617 100.825 26.2617C87.6254 26.2617 76.768 15.6094 76.6615 2.51016C76.6615 1.51875 75.9164 0.485156 74.5326 0.421875H57.6717C56.5008 0.421875 55.5428 1.37109 55.5428 2.53125V48.6422L55.5215 73.9125C55.5215 79.5867 51.8385 84.607 46.3672 86.4C44.7918 86.9063 43.1525 87.1383 41.492 87.0539C34.4879 86.7164 28.9101 81.0211 28.8037 74.1023C28.7611 70.5586 30.1023 67.2258 32.6144 64.6945C35.1478 62.1422 38.5541 60.7289 42.1732 60.7289C43.5996 60.7289 45.026 60.9609 46.3885 61.4039C47.1975 61.657 48.0916 61.425 48.6664 60.7922C49.007 60.3914 49.1773 59.8641 49.1773 59.3578V42.3352C49.1773 41.3016 48.4109 40.3945 47.3678 40.2469C45.6434 39.9938 43.8976 39.8672 42.1732 39.8672C38.3838 39.8672 34.7221 40.4578 31.2519 41.5969C30.1236 41.9766 29.5914 43.2211 30.1236 44.2758V44.2969C30.1875 44.4023 30.2514 44.5289 30.2939 44.6344C30.7197 45.4781 31.7203 45.8789 32.6144 45.5836C35.6375 44.5922 38.8521 44.0859 42.1519 44.0859C43.0674 44.0859 43.9828 44.1281 44.8982 44.2125V56.7422C43.9828 56.5945 43.0674 56.5313 42.1519 56.5313C37.3832 56.5313 32.9125 58.3875 29.5701 61.7414C26.249 65.0742 24.4607 69.4828 24.5246 74.1656C24.6523 83.2992 32.0184 90.8086 41.2578 91.2516C43.4506 91.357 45.6008 91.0617 47.6871 90.3867C54.9254 88.0242 59.7793 81.4008 59.7793 73.8914L59.8006 48.6211V4.64063H65.357C67.9117 4.61953 70.7219 4.59844 72.5101 4.61953C73.0637 11.3273 75.959 17.55 80.8342 22.3383C85.6881 27.1055 91.9896 29.932 98.7383 30.4383C98.7383 33.6023 98.7596 39.7406 98.7809 43.0102C93.9908 42.7781 89.3285 41.7234 84.9004 39.8672C81.6432 38.5172 78.5988 36.7453 75.8099 34.6148C75.1713 34.1297 74.2984 34.0453 73.5746 34.3828C72.8508 34.7203 72.3824 35.4797 72.3824 36.2813L72.4676 74.0602C72.4463 78.2578 71.5521 82.3078 69.8703 86.0414C69.4445 86.9695 69.7851 88.0664 70.6367 88.6149C70.658 88.6149 70.658 88.6359 70.6793 88.6359C71.765 89.332 73.234 88.9102 73.7662 87.75C75.6822 83.4891 76.7041 78.8695 76.7254 74.0602L76.5976 40.2891C78.7053 41.5969 80.898 42.757 83.1973 43.7063C88.7963 46.0477 94.7359 47.25 100.846 47.25C101.421 47.25 101.974 47.0391 102.379 46.6383C102.783 46.2375 102.996 45.7102 102.996 45.1406L102.975 36.7453Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="109" height="108" transform="translate(0.808594)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <h4 class="social-inner-top-card__title">
+                        TikTok
+                    </h4>
+                    <a href="#" target="_blank" class="social-inner-top-card__link">
+                        @galazery
+                    </a>
+                </div>
+
+                <div class="social-inner-top-card">
+                    <svg class="social-inner-top-card__img" width="111" height="111" viewBox="0 0 111 111"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <path
+                                d="M77.9791 0.421875H32.4323C14.6625 0.421875 0.205688 14.8787 0.205688 32.6484V78.1953C0.205688 95.965 14.6625 110.422 32.4323 110.422H77.9791C95.7489 110.422 110.206 95.965 110.206 78.1953V32.6484C110.206 14.8787 95.7489 0.421875 77.9791 0.421875ZM105.909 78.1953C105.909 93.5957 93.3796 106.125 77.9791 106.125H32.4323C17.0318 106.125 4.50256 93.5957 4.50256 78.1953V32.6484C4.50256 17.248 17.0318 4.71875 32.4323 4.71875H77.9791C93.3796 4.71875 105.909 17.248 105.909 32.6484V78.1953Z" />
+                            <path
+                                d="M77.9791 9.875H32.4323C19.8748 9.875 9.65881 20.091 9.65881 32.6484V78.1953C9.65881 90.7527 19.8748 100.969 32.4323 100.969H45.5377C46.7243 100.969 47.6862 100.007 47.6862 98.8203C47.6862 97.6337 46.7243 96.6719 45.5377 96.6719H32.4323C22.2444 96.6719 13.9557 88.3832 13.9557 78.1953V32.6484C13.9557 22.4605 22.2444 14.1719 32.4323 14.1719H77.9791C88.167 14.1719 96.4557 22.4605 96.4557 32.6484V78.1953C96.4557 88.3832 88.167 96.6719 77.9791 96.6719H65.017C63.8304 96.6719 62.8685 97.6337 62.8685 98.8203C62.8685 100.007 63.8304 100.969 65.017 100.969H77.9791C90.5365 100.969 100.753 90.7527 100.753 78.1953V32.6484C100.753 20.091 90.5365 9.875 77.9791 9.875Z" />
+                            <path
+                                d="M56.7246 97.3014C56.325 96.9018 55.7707 96.6719 55.2057 96.6719C54.6406 96.6719 54.0864 96.9018 53.6867 97.3014C53.2871 97.701 53.0573 98.2553 53.0573 98.8203C53.0573 99.3854 53.2871 99.9397 53.6867 100.339C54.0864 100.739 54.6406 100.969 55.2057 100.969C55.7707 100.969 56.325 100.739 56.7246 100.339C57.1242 99.9397 57.3541 99.3854 57.3541 98.8203C57.3541 98.2553 57.1242 97.701 56.7246 97.3014Z" />
+                            <path
+                                d="M37.9817 33.875C37.1702 33.0092 35.8109 32.965 34.9449 33.776L34.8497 33.8656C33.9867 34.6799 33.9471 36.0396 34.7616 36.9026C35.1842 37.3506 35.7538 37.5766 36.3246 37.5766C36.8535 37.5766 37.3836 37.3824 37.7986 36.9907L37.8826 36.9119C38.7485 36.1006 38.7929 34.7409 37.9817 33.875Z" />
+                            <path
+                                d="M55.2057 25.7734C50.4869 25.7734 45.7904 26.9102 41.6239 29.0608C40.5697 29.605 40.1561 30.9009 40.7003 31.9554C41.2447 33.0096 42.5406 33.4229 43.5949 32.879C47.2053 31.0152 51.1118 30.0703 55.2057 30.0703C69.1845 30.0703 80.5573 41.4431 80.5573 55.4219C80.5573 69.4007 69.1845 80.7734 55.2057 80.7734C41.2269 80.7734 29.8541 69.4007 29.8541 55.4219C29.8541 51.035 30.9917 46.7128 33.144 42.9227C33.7299 41.891 33.3685 40.5796 32.3366 39.9935C31.3047 39.4079 29.9936 39.769 29.4075 40.8009C26.8886 45.2366 25.5573 50.2925 25.5573 55.4219C25.5573 71.77 38.8576 85.0703 55.2057 85.0703C71.5538 85.0703 84.8541 71.77 84.8541 55.4219C84.8541 39.0738 71.5538 25.7734 55.2057 25.7734Z" />
+                            <path
+                                d="M55.2057 36.0859C44.5439 36.0859 35.8698 44.76 35.8698 55.4219C35.8698 66.0837 44.5439 74.7578 55.2057 74.7578C65.8675 74.7578 74.5416 66.0837 74.5416 55.4219C74.5416 44.76 65.8675 36.0859 55.2057 36.0859ZM55.2057 70.4609C46.9131 70.4609 40.1666 63.7144 40.1666 55.4219C40.1666 47.1293 46.9131 40.3828 55.2057 40.3828C63.4982 40.3828 70.2448 47.1293 70.2448 55.4219C70.2448 63.7144 63.4982 70.4609 55.2057 70.4609Z" />
+                            <path
+                                d="M83.4039 19.0596C78.9023 19.0596 75.2399 22.722 75.2399 27.2236C75.2399 31.7253 78.9023 35.3877 83.4039 35.3877C87.9056 35.3877 91.568 31.7253 91.568 27.2236C91.568 22.722 87.9056 19.0596 83.4039 19.0596ZM83.4039 31.0908C81.2716 31.0908 79.5367 29.356 79.5367 27.2236C79.5367 25.0913 81.2716 23.3564 83.4039 23.3564C85.5363 23.3564 87.2711 25.0913 87.2711 27.2236C87.2711 29.356 85.5363 31.0908 83.4039 31.0908Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="110" height="110" transform="translate(0.205688 0.421875)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+
+                    <h4 class="social-inner-top-card__title">
+                        Instagram
+                    </h4>
+                    <a href="#" target="_blank" class="social-inner-top-card__link">
+                        @galazery
+                    </a>
+                </div>
+
+                <div class="social-inner-top-card">
+                    <svg width="111" class="social-inner-top-card__img" height="110" viewBox="0 0 111 110"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <path
+                                d="M55.1028 80.6379C53.9163 80.6379 52.9544 81.5998 52.9544 82.7864C52.9544 82.7892 52.9544 82.7922 52.9544 82.795C52.9544 82.7978 52.9544 82.8008 52.9544 82.8036V82.8207C52.9544 84.0073 53.9163 84.9692 55.1028 84.9692C56.2894 84.9692 57.2513 84.0073 57.2513 82.8207C57.2513 82.8177 57.2513 82.8152 57.2513 82.8122C57.2513 82.8091 57.2513 82.8066 57.2513 82.8036C57.2513 82.8006 57.2513 82.7978 57.2513 82.795C57.2513 82.7922 57.2513 82.7892 57.2513 82.7864C57.2513 81.5998 56.2894 80.6379 55.1028 80.6379Z" />
+                            <path
+                                d="M89.0482 0H21.1575C9.54781 0 0.102844 9.44496 0.102844 21.0547V88.9453C0.102844 100.555 9.54781 110 21.1575 110H55.1028C56.2894 110 57.2513 109.038 57.2513 107.852V91.2012C57.2513 90.0146 56.2894 89.0527 55.1028 89.0527C53.9163 89.0527 52.9544 90.0146 52.9544 91.2012V105.703H21.1575C11.9173 105.703 4.39972 98.1855 4.39972 88.9453V21.0547C4.39972 11.8145 11.9173 4.29688 21.1575 4.29688H89.0482C98.2884 4.29688 105.806 11.8145 105.806 21.0547V88.9453C105.806 98.1855 98.2884 105.703 89.0482 105.703H75.2982V67.7834H87.755C88.8584 67.7834 89.7823 66.9477 89.8927 65.85L91.4377 50.4984C91.4985 49.894 91.3008 49.2925 90.8934 48.8421C90.4861 48.3918 89.9071 48.1349 89.2999 48.1349H75.2982V40.0737C75.2982 38.6147 75.7629 38.0722 77.0128 38.0722H89.2035C90.3901 38.0722 91.3519 37.1104 91.3519 35.9238V20.9578C91.3519 19.7712 90.3901 18.8094 89.2035 18.8094H73.194C64.1226 18.8094 59.3118 22.7938 56.8736 26.1364C53.4634 30.811 52.9542 36.3316 52.9542 39.2062V48.2311H42.4268C41.2403 48.2311 40.2784 49.193 40.2784 50.3796V65.6348C40.2784 66.8214 41.2403 67.7832 42.4268 67.7832H52.9542V73.9062C52.9542 75.0928 53.916 76.0547 55.1026 76.0547C56.2892 76.0547 57.2511 75.0928 57.2511 73.9062V65.6348C57.2511 64.4482 56.2892 63.4863 55.1026 63.4863H44.5753V52.5278H55.1026C56.2892 52.5278 57.2511 51.5659 57.2511 50.3794V39.206C57.2511 34.3651 58.8046 23.106 73.194 23.106H87.055V33.7752H77.0128C74.2396 33.7752 71.0013 35.4247 71.0013 40.0735V50.2831C71.0013 51.4697 71.9631 52.4315 73.1497 52.4315H86.9244L85.812 63.4863H73.1497C71.9631 63.4863 71.0013 64.4482 71.0013 65.6348V107.852C71.0013 109.038 71.9631 110 73.1497 110H89.0482C100.658 110 110.103 100.555 110.103 88.9453V21.0547C110.103 9.44496 100.658 0 89.0482 0Z" />
+                            <path
+                                d="M12.5638 22.0215C11.3772 22.0215 10.4153 22.9833 10.4153 24.1699V42.1094C10.4153 43.296 11.3772 44.2578 12.5638 44.2578C13.7504 44.2578 14.7122 43.296 14.7122 42.1094V24.1699C14.7122 22.9833 13.7504 22.0215 12.5638 22.0215Z" />
+                            <path
+                                d="M12.5638 49.2812C11.3772 49.2812 10.4153 50.2431 10.4153 51.4297V51.455C10.4153 52.6416 11.3772 53.6035 12.5638 53.6035C13.7504 53.6035 14.7122 52.6416 14.7122 51.455V51.4297C14.7122 50.2431 13.7504 49.2812 12.5638 49.2812Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="110" height="110" transform="translate(0.102844)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <h4 class="social-inner-top-card__title">
+                        Facebook
+                    </h4>
+                    <a href="#" target="_blank" class="social-inner-top-card__link">
+                        @galazery
+                    </a>
+                </div>
+
+                <div class="social-inner-top-card">
+                    <svg width="110" class="social-inner-top-card__img" height="111" viewBox="0 0 110 111"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <path
+                                d="M82.7724 26.6154L37.533 54.4785C34.9729 56.0588 33.7614 59.1803 34.5862 62.0674L39.4777 79.2549C39.8956 80.7203 41.1997 81.6944 42.7002 81.6944C42.7838 81.6944 42.8682 81.6914 42.9528 81.6852C44.5569 81.5687 45.8262 80.374 46.0395 78.7816L47.3114 69.3572C47.4828 68.0892 48.0938 66.9097 49.0303 66.0379L86.3627 31.3355C87.4908 30.2894 87.6399 28.5765 86.7103 27.3512C85.7792 26.1249 84.0873 25.8078 82.7724 26.6154ZM46.0453 62.8292C44.3678 64.3907 43.2749 66.5007 42.9681 68.7707L42.3513 73.3422L38.8005 60.8658C38.512 59.8551 38.937 58.7622 39.8329 58.2092L72.9743 37.7976L46.0453 62.8292Z" />
+                            <path
+                                d="M108.21 8.45332C106.797 7.25535 104.847 6.92557 103.119 7.59287L3.23984 46.1234C1.26178 46.8863 -0.010099 48.7488 -1.34813e-06 50.8682C0.0103112 52.9896 1.30088 54.8417 3.29055 55.5872L26.6204 64.2946L35.721 93.5617C36.2207 95.1707 37.4821 96.4209 39.0947 96.906C40.7064 97.3907 42.4471 97.0441 43.7482 95.98L57.3134 84.9214C57.9648 84.3903 58.8951 84.3641 59.5753 84.858L84.0424 102.621C84.9226 103.261 85.9613 103.591 87.0121 103.591C87.6277 103.591 88.2473 103.478 88.842 103.248C90.4503 102.626 91.6199 101.247 91.9701 99.5604L109.894 13.3417C110.271 11.5262 109.626 9.65322 108.21 8.45332ZM105.603 12.4511L87.6795 98.6696C87.6146 98.9812 87.3903 99.1107 87.2622 99.1603C87.1333 99.2102 86.8787 99.2654 86.6183 99.0759L62.1504 81.3116C61.0567 80.5175 59.7706 80.1233 58.4869 80.1233C57.0866 80.1233 55.6881 80.5927 54.5452 81.5238L40.9769 92.5851C40.7354 92.7827 40.4847 92.7475 40.3571 92.709C40.2286 92.6703 39.9994 92.5608 39.9062 92.2609L30.4863 61.9666C30.285 61.3193 29.7952 60.8015 29.1601 60.5643L4.82582 51.4822C4.46144 51.3458 4.38389 51.0616 4.38281 50.8469C4.38174 50.6342 4.4565 50.3513 4.81744 50.2121L104.697 11.6818C104.697 11.6816 104.698 11.6813 104.699 11.6811C105.023 11.5559 105.263 11.6998 105.377 11.7965C105.492 11.8943 105.675 12.1091 105.603 12.4511Z" />
+                            <path
+                                d="M91.8416 54.5929C90.6587 54.3359 89.4921 55.0868 89.2353 56.2695L88.9023 57.8035C88.6456 58.9862 89.3963 60.153 90.579 60.4098C90.7356 60.4437 90.8918 60.46 91.046 60.46C92.0547 60.46 92.9624 59.7592 93.1854 58.7333L93.5185 57.1994C93.775 56.0166 93.0241 54.8498 91.8416 54.5929Z" />
+                            <path
+                                d="M89.6502 64.6863C88.466 64.4296 87.3002 65.1802 87.0437 66.363L82.0037 89.577C81.747 90.7597 82.4976 91.9266 83.6801 92.1833C83.837 92.2173 83.9932 92.2336 84.1472 92.2336C85.1561 92.2336 86.0636 91.5328 86.2866 90.5069L91.3266 67.2926C91.5834 66.1099 90.8327 64.9431 89.6502 64.6863Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="110" height="110" transform="translate(0 0.421875)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+
+                    <h4 class="social-inner-top-card__title">
+                        Telegram
+                    </h4>
+                    <a href="#" target="_blank" class="social-inner-top-card__link">
+                        @galazery
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="social-inner-bottom">
+                <h3 class="social-inner-bottom__title" data-aos="fade-right">
+                    Doimiy mijozimizga aylanish va hamkorlik qilish niyatida
+                    bo’lsangiz hoziroq bizga murojaat qiling:
+                </h3>
+                <a href="tel:+998974044145" class="social-inner-bottom__btn" data-aos="fade-left">
+                    +998 97 404 41 45
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner container">
+            <h3 class="footer-inner__title" data-aos="zoom-in">
+                Galazery - Oliy maqsadlar sari birgalikda!
+            </h3>
+
+            <div class="footer-inner-abt">
+                <a href="#" class="footer-inner-abt-left">
+                    <img src="./images/icons/footer-logo.svg" alt="footer-logo" class="footer-inner-abt-left__img">
+                </a>
+
+                <h3 class="footer-inner-abt-left__text">
+                    “Galazery Team” 2021. Barcha huquqlar himoyalangan
+                </h3>
+
+                <div class="footer-inner-abt-empty"></div>
+
+                <a href="#" class="footer-inner-abt-right" id="to-up">
+                    <img src="./images/icons/to-up.png" alt="" class="footer-inner-abt-right__img">
+                </a>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./libs/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>

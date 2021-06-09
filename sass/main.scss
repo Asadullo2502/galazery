@@ -1,0 +1,27 @@
+@import 'normalize';
+@import './blocks/_container';
+@import './blocks/_header';
+@import './blocks/heroSection';
+@import './blocks/about';
+@import './blocks/projects';
+@import './blocks/service';
+@import './blocks/social';
+@import './blocks/_footer';
+@import './blocks/overlay';
+@import './blocks/apply-block';
+@import './blocks/success-card';
+@import './blocks/fail-card';
+
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nexa';
+    transition: all ease 0.5s;
+
+    &.no-scroll{
+        overflow: hidden;
+    }
+}

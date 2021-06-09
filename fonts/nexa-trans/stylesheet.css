@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url('./NexaBold.eot');
+    src: url('NexaBold.eot?#iefix') format('embedded-opentype'),
+        url('./NexaBold.woff') format('woff'),
+        url('./NexaBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Light';
+    src: url('./NexaLight.eot');
+    src: url('NexaLight.eot?#iefix') format('embedded-opentype'),
+        url('./NexaLight.woff') format('woff'),
+        url('./NexaLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    background: rgba(red, green, blue, alpha);
+}
+
+
+

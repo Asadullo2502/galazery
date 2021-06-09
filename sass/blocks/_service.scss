@@ -1,0 +1,155 @@
+.services{
+    box-sizing: border-box;
+    background: #2F333D;
+    padding: 30px 0 75px 0;
+    position: relative;
+    margin-bottom: 54px;
+    
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 22px;
+        background-repeat: no-repeat;
+        background-image: url(../../images/service-bgi.png);
+        width: 218.96px;
+        height: 260px;
+        z-index: 2;
+
+        @media only screen and(max-width:576px) {
+            width: 145px;
+            height: 252px;
+        }
+    }
+
+    &__img{
+        object-fit: contain;
+        position: absolute;
+        left: 5%;
+        top: -90px;
+        z-index: 0;
+        @media only screen and(max-width:1524px) {
+            left: 0;
+        }
+
+        @media only screen and(max-width:768px) {
+            bottom: 0;
+            top: 100px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            margin-top: 350px;
+            margin-left: 5%;
+        }
+        @media only screen and(max-width:576px) {
+            width: 378.87px;
+            height: 321.97px;
+            margin: 0 auto;
+            margin-top: 255px;
+        }
+
+    }
+
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+        @media only screen and(max-width:768px) {
+            flex-direction: column-reverse;
+            padding-bottom: 554px;
+            margin: 0;
+            @media only screen and(max-width:576px) {
+                padding-bottom: 250px;
+            }
+        }
+
+        &-left{
+            position: relative;
+        }
+
+        &-right{
+            width: 46%;
+            @media only screen and(max-width:768px) {
+                width: 100%;
+            }
+            &__title{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 26px;
+                line-height: 20px;
+                color: #FFFFFF;
+                margin-bottom: 33px;
+                text-align: right;
+
+                @media only screen and(max-width:576px) {
+                    font-size: 18px;
+                    line-height: 20px;
+                    margin:  0 auto;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &__text{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 25px;
+                color: #fff;
+                margin-bottom: 28px;
+                font-family: 'Nexa Light';
+
+                @media only screen and(max-width:768px) {
+                    text-align: center;
+                    max-width: 501px;
+                    margin: 0 auto;
+                    margin-bottom: 23px;
+                }
+                @media only screen and(max-width:576px) {
+                    font-size: 12px;
+                    line-height: 15px;
+                    max-width: 357px;
+                }
+
+                span{
+                    color: #EA5157;
+                }
+            }
+
+            &__btn{
+                background: #EA5157;
+                border-radius: 8px;
+                padding: 12px 38px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 25px;
+                color: #FFFFFF;
+                border: none;
+                outline: none;
+                cursor: grab;
+
+                @media only screen and(max-width:768px) {
+                    padding: 6px 25px;
+                    margin: 0 auto;
+                    display: block !important;
+                }
+                @media only screen and(max-width:576px) {
+                    font-size: 14px;
+                    line-height: 25px;
+                    padding: 2px 16px;
+                }
+
+
+                &:hover{
+                    background-color: #fff;
+                    color: #EA5157;
+                }
+
+                &:active{
+                    opacity: 0.6;
+                    cursor: grabbing;
+                    box-shadow: 0;
+                }
+            }
+        }
+    }
+}

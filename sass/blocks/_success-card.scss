@@ -1,0 +1,62 @@
+.success-card{
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #FFFFFF;
+    box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.4), 10px 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    width: 298.37px;
+    height: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    &.opened{
+        height: 143.11px;
+        margin: auto;
+        z-index: 9;
+        padding: 11px 0;
+    }
+
+    &__title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 26px;
+        color: #2F333D;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    &__text{
+        font-family: Nexa Light;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #000000;
+        max-width: 134px;
+        margin: 0 auto;
+        margin-bottom: 18px;
+    }
+
+    &__btn{
+        background: #3AB027;
+        border-radius: 4px;
+        padding: 4px 20px;
+        border: none;
+        outline: none;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+        margin: 0 auto;
+        text-align: center;
+        display: block !important;
+        cursor: pointer;
+    }
+}
