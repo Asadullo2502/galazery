@@ -123,11 +123,7 @@
         align-items: center;
         flex-direction: column;
 
-        &:hover{
-            .hero-section-bottom__img{
-                transform: translateY(10px);
-            }
-        }
+        
 
         &__title{
             font-style: normal;
@@ -144,6 +140,18 @@
             height: 23.07px;
             transition: all ease 0.5s;
             cursor: pointer;
+            animation:  animeArrow 1s infinite;
+
+            @keyframes animeArrow {
+                0%{
+                }25% {
+                    transform: translateY(0);
+                }50% {
+                    transform: translateY(10px);
+                }100% {
+                    transform: translateY(0);
+                }
+            }
         }
     }
 }

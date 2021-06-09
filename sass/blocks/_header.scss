@@ -26,6 +26,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 20px 0;
 
         @media only screen and(max-width:768px) {
             padding: 0;
@@ -125,6 +126,74 @@
         &-right {
             display: flex;
             align-items: center;
+
+            &-list {
+
+                &__link {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #FFFFFF;
+                    padding: 0 20px;
+
+                    transition: all ease 0.5s;
+
+                    &.link--pad {
+                        padding-right: 35px;
+                    }
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
+                    &:hover {
+                        color: #EA5157;
+                    }
+
+                    &.link--header {    
+                        border-radius: 6px;
+                        color: #fff;
+                        background: #EA5157;
+                        padding: 10px;
+                        animation: animeBtn 1s infinite;
+
+                        &:hover {
+                            background-color: #fff;
+                        }
+
+                        @keyframes animeBtn {
+                            0% {
+                                box-shadow: 0 0 10px #EA5157;
+                            }
+
+                        25% {
+                                box-shadow: 0 0 10px #EA5157,
+                                0 0 20px #EA5157,
+                                0 0 30px #EA5157;
+                            }
+                        }
+                        // @keyframes animeBtn {
+                        //     0% {
+                        //         border: 5px solid #EA5157;
+                        //         box-shadow: 0 0 5px #EA5157,
+                        //             0 0 10px #EA5157,
+                        //             inset 0 0 5px #EA5157,
+                        //             inset 0 0 10px #EA5157;
+                        //         color: #EA5157;
+                        //         text-shadow: 0 0 5px #EA5157,
+                        //             0 0 10px #EA5157;
+                        //     }
+
+                        //     100% {
+                        //         border: 5px solid #444;
+                        //         box-shadow: none;
+                        //         text-shadow: none;
+                        //     }
+                        // }
+                    }
+                }
+            }
 
             @media only screen and(max-width:576px) {
                 flex-direction: column;
