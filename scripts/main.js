@@ -58,6 +58,22 @@ let successBtn = document.querySelector('.success-card__btn');
 let failCard = document.querySelector('.fail-card')
 let failBtn = document.querySelector('.fail-card__btn');
 let textArea = document.querySelector('#abt-order');
+let burger = document.querySelector('.burger')
+let minMenu = document.querySelector('.header-inner-right')
+let links = document.querySelectorAll('.header-inner-right-list__link')
+
+links.forEach(elem => {
+  elem.addEventListener('click', (e) => {
+    burger.classList.remove('active')
+    minMenu.classList.remove('show')
+  })
+})
+
+burger.addEventListener('click', (e) => {
+  e.preventDefault()
+  burger.classList.toggle('active')
+  minMenu.classList.toggle('show')
+})
 
 window.addEventListener('scroll', function () {
   if (pageYOffset > 1000) {
