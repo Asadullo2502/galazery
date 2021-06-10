@@ -729,6 +729,7 @@ ul {
 }
 
 .about-section-inner-right__text {
+  font-family: 'Nexa Light';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -1585,6 +1586,7 @@ ul {
 }
 
 .footer-inner-abt-left__text {
+  opacity: 0.4;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
