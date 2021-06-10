@@ -160,6 +160,7 @@
 
                         &:hover {
                             background-color: #fff;
+                            color: #EA5157;
                         }
 
                         @keyframes animeBtn {
@@ -232,6 +233,7 @@
                 }
 
                 &-list {
+                    
                     &__link {
                         font-style: normal;
                         font-weight: bold;
@@ -267,8 +269,11 @@
 
                             &:hover {
                                 background-color: #fff;
+                                
                             }
                         }
+
+                        
                     }
                 }
             }
