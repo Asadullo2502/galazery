@@ -133,6 +133,19 @@
                 border: none;
                 outline: none;
                 cursor: grab;
+                animation: animeBtn 1s infinite;
+
+                @keyframes animeBtn {
+                    0% {
+                        box-shadow: 0 0 10px #EA5157;
+                    }
+
+                    25% {
+                        box-shadow: 0 0 10px #EA5157,
+                            0 0 20px #EA5157,
+                            0 0 30px #EA5157;
+                    }
+                }
 
                 @media only screen and(max-width:768px) {
                     padding: 6px 25px;

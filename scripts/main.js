@@ -61,6 +61,41 @@ let textArea = document.querySelector('#abt-order');
 let burger = document.querySelector('.burger')
 let minMenu = document.querySelector('.header-inner-right')
 let links = document.querySelectorAll('.header-inner-right-list__link')
+let select = document.querySelector('#service-type')
+
+form.onsubmit = async (event) => {
+  event.preventDefault();
+  console.log("ishlavotti")
+  let response = await fetch('http://localhost:3000/orders', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      orderAbout: textArea.value,
+      tel: applyInput.value,
+      serviceId: select.value
+    })
+  })
+  console.log(await response.json());
+  form.reset()
+}
+
+(
+  async () => {
+    let response = await fetch('http://localhost:3000/services')
+    let res = await response.json()
+    console.log(res);
+
+    for(let i = 0; i < res.length; i++) {
+      let opt = document.createElement('option')
+      opt.setAttribute('class', 'apply-form-service-type-select__option')
+      opt.setAttribute('value', res[i].service_id)
+      opt.textContent = res[i].service_name
+      select.append(opt)
+    }
+  }
+)()
 
 links.forEach(elem => {
   elem.addEventListener('click', (e) => {

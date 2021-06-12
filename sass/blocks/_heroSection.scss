@@ -57,7 +57,7 @@
                 line-height: 20px;
                 color: #2F333D;
                 max-width: 382px;
-                margin-bottom: 21px;
+                margin-bottom: 32px;
                 @media only screen and(max-width:768px) {
                     margin-bottom: 25px;
                 }
@@ -108,7 +108,9 @@
                 width: 447.46px;
                 height: 338.01px;
                 object-fit: contain;
+                transition: all 0.5s;
 
+                
                 @media only screen and(max-width:576px) {
                     width: 200px;
                     height: 180px;

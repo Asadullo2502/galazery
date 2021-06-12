@@ -39,10 +39,16 @@
         &-left {
             display: flex;
             align-items: center;
+            
+
+            &:hover &__img {
+                transform: rotate(360deg);
+            }
 
             &__img {
                 width: 56.79px;
                 height: 57.46px;
+                transition: all 0.3s;
 
                 @media only screen and(max-width:576px) {
                     width: 25.12px;
